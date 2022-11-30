@@ -21,7 +21,7 @@
     width: 528px;
     height: 581px;
   
-    background: var(--background-color);
+    background: $background-color;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
@@ -50,7 +50,7 @@
   }
   
   .close-icon {
-    fill: var(--accent-black-color);
+    fill: $accent-black-color;
   
     transition-property: color;
     transition-duration: 250ms;
@@ -59,7 +59,7 @@
   
   .close-icon:hover,
   .close-icon:focus {
-    fill: var(--accent-color);
+    fill: $accent-color;
   }
   
   .is-hidden {
@@ -73,7 +73,7 @@
     line-height: calc(23 / 20);
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--main-color);
+    color: $main-color;
   
     margin-bottom: 12px;
   }
@@ -98,13 +98,13 @@
   }
   .form-input:hover,
   .form-input:focus {
-    border-color: var(--accent-color);
+    border-color: $accent-color;
     outline: none;
   }
   
   .form-input:hover + .form-icon,
   .form-input:focus + .form-icon {
-    fill: var(--accent-color);
+    fill: $accent-color;
   }
   
   .form-label {
@@ -114,7 +114,7 @@
     font-size: 12px;
     line-height: calc(14 / 12);
     letter-spacing: 0.01em;
-    color: var(--second-color);
+    color: $second-color;
   }
   .form-icon {
     position: absolute;
@@ -147,7 +147,7 @@
   
   .comment:hover,
   .comment:focus {
-    border-color: var(--accent-color);
+    border-color: $accent-color;
     outline: none;
   }
   .label-agree {
@@ -156,7 +156,7 @@
     align-items: center;
   }
   .form-link {
-    color: var(--accent-color);
+    color: $accent-color;
   }
   
   .button-agree {
@@ -169,7 +169,7 @@
     width: 200px;
     height: 50px;
   
-    background-color: var(--accent-color);
+    background-color: $accent-color;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
   
@@ -180,7 +180,7 @@
     text-align: center;
     letter-spacing: 0.06em;
   
-    color: var(--extra-white-color);
+    color: $extra-white-color;
   
     border-style: none;
     transition-property: background-color, color;
@@ -188,8 +188,8 @@
   
   .button-agree:hover,
   .button-agree:focus {
-    background-color: var(--button-second-color);
-    color: var(--main-color);
+    background-color: $button-second-color;
+    color: $main-color;
   }
   
   .icon-wrapper {
@@ -200,7 +200,7 @@
     justify-content: center;
     border-width: 2px;
     border-style: solid;
-    border-color: var(--main-color);
+    border-color: $main-color;
     border-image: initial;
     border-radius: 3px;
     margin-right: 7px;
@@ -210,11 +210,11 @@
   }
   
   .input-agree:checked + .icon-wrapper {
-    background-color: var(--accent-color);
+    background-color: $accent-color;
     border: none;
   }
   .input-agree:checked + .icon-wrapper .icon-agree {
-    fill: var(--extra-white-color);
+    fill: $extra-white-color;
   }
   
   .agree-text {
@@ -223,5 +223,5 @@
     line-height: calc(24 / 14);
     letter-spacing: 0.03em;
   
-    color: var(--second-color);
+    color: $second-color;
   }

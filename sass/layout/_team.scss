@@ -1,5 +1,5 @@
 .body .team {
-    background-color: var(--background-second-color);
+    background-color: $background-second-color;
 }
 
 .team {
@@ -39,14 +39,14 @@
     line-height: calc(19 / 16);
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--main-color);
+    color: $main-color;
 }
 
 .team-text {
     line-height: calc(19 / 16);
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--second-color);
+    color: $second-color;
     margin-bottom: 16px;
 }
 
@@ -72,7 +72,7 @@
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    background-color: var(--background-color);
+    background-color: $background-color;
     color: #afb1b8;
 
     transition-property: background-color, color;
@@ -86,6 +86,6 @@
 
 .team-description .social-link:hover,
 .team-description .social-link:focus {
-    background-color: var(--accent-color);
-    color: var(--extra-white-color);
+    background-color: $accent-color;
+    color: $extra-white-color;
 }

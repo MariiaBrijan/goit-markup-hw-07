@@ -8,8 +8,8 @@ p {
 .body {
     font-family: "roboto", "sans-serif";
     font-size: 16px;
-    background-color: var(--background-color);
-    color: var(--main-color);
+    background-color: $background-color;
+    color: $main-color;
 }
 
 .container {

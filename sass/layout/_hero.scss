@@ -27,7 +27,7 @@
     line-height: calc(60 / 44);
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: var(--extra-white-color);
+    color: $extra-white-color;
     width: 696px;
 }
 
@@ -37,12 +37,12 @@
     margin-right: auto;
     padding: 10px 32px;
 
-    background-color: var(--accent-color);
+    background-color: $accent-color;
     font-weight: 700;
     font-size: 16px;
     line-height: calc(30 / 16);
     letter-spacing: 0.06em;
-    color: var(--extra-white-color);
+    color: $extra-white-color;
     font-family: inherit;
     border-radius: 4px;
     border-style: none;
@@ -52,6 +52,6 @@
 
 .hero-button:hover,
 .hero-button:focus {
-    background-color: var(--button-second-color);
-    color: var(--main-color);
+    background-color: $button-second-color;
+    color: $main-color;
 }

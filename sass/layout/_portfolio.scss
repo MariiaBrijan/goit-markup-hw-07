@@ -22,10 +22,10 @@
     font-size: 16px;
     line-height: calc(26 / 16);
     letter-spacing: 0.03em;
-    background-color: var(--button-second-color);
+    background-color: $button-second-color;
     border: none;
     border-radius: 4px;
-    color: var(--main-color);
+    color: $main-color;
     font-family: inherit;
 
     transition-property: background-color, color, box-shadow;
@@ -35,8 +35,8 @@
 
 .projects-button:hover,
 .projects-button:focus {
-    background-color: var(--accent-color);
-    color: var(--extra-white-color);
+    background-color: $accent-color;
+    color: $extra-white-color;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
         0px 2px 2px rgba(0, 0, 0, 0.12);
 }
@@ -82,13 +82,13 @@
     font-size: 18px;
     line-height: calc(36 / 18);
     letter-spacing: 0.06em;
-    color: var(--main-color);
+    color: $main-color;
 }
 
 .projects-text {
     line-height: calc(30 / 16);
     letter-spacing: 0.03em;
-    color: var(--second-color);
+    color: $second-color;
 }
 
 .projects-list .img-wrapper {
@@ -110,7 +110,7 @@
     font-size: 18px;
     line-height: calc(28 / 18);
     letter-spacing: 0.03em;
-    color: var(--extra-white-color);
+    color: $extra-white-color;
     padding: 63px 24px;
 
     transform: translateY(100%);

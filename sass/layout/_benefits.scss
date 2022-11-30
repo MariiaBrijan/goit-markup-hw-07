@@ -8,7 +8,7 @@
 }
 
 .benefits-item {
-    flex-basis: calc((100%-90px) / 4);
+    flex-basis: calc((100% - 90px) / 4);
 }
 
 .benefits-item:not(:last-child) {

@@ -787,7 +787,7 @@ p {
   transform: translateY(0);
 } */
 
-.modal-backdrop {
+/* .modal-backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -1013,4 +1013,4 @@ p {
   letter-spacing: 0.03em;
 
   color: var(--second-color);
-}
+} */

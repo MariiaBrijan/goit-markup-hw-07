@@ -2,30 +2,20 @@
     padding-bottom: 94px;
 }
 
-.tasks-list {
+.tasks__list {
     display: flex;
 }
 
-.tasks-list-item {
+.tasks__item {
     flex-basis: calc((100% - 60px) / 3);
     position: relative;
+
+    &:not(:last-child) {
+        margin-right: 30px;
+        }
 }
 
-.tasks-list-item:not(:last-child) {
-    margin-right: 30px;
-}
-
-.second-title {
-    margin-bottom: 50px;
-
-    font-size: 36px;
-    line-height: calc(42 / 36);
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: $main-color;
-}
-
-.tasks-description {
+.tasks__description {
     position: absolute;
     bottom: 0px;
     left: 0px;

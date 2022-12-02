@@ -3,14 +3,14 @@
     padding-bottom: 89px;
 }
 
-.button-list {
+.buttons__list {
     display: flex;
     margin-left: auto;
     justify-content: center;
     margin-bottom: 50px;
 }
 
-.button-item:not(:last-child) {
+.buttons-list__item:not(:last-child) {
     margin-right: 8px;
 }
 

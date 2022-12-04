@@ -29,21 +29,25 @@
     font-family: inherit;
 
     transition-property: background-color, color, box-shadow;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+    @extend %transitions;
 
-.buttons-list__button:hover,
-.buttons-list__button:focus {
-    background-color: $accent-color;
-    color: $extra-white-color;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    &:hover,
+    &:focus {
+        background-color: $accent-color;
+        color: $extra-white-color;
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
         0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
 }
 
 .projects__list {
     display: flex;
     flex-wrap: wrap;
+
+    & .img__wrapper {
+        position: relative;
+        overflow: hidden;
+        }
 }
 
 .projects__item {
@@ -51,22 +55,21 @@
     margin-bottom: 30px;
 
     transition-property: box-shadow;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+    @extend %transitions;
 
-.projects__item:hover,
-.projects__item:focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-        1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.projects__item:nth-child(3n) {
-    margin-right: 0;
-}
-
-.projects__item:nth-last-child(-n + 3) {
-    margin-bottom: 0px;
+    &:hover,
+    &:focus {
+            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+                1px 4px 6px rgba(0, 0, 0, 0.16);
+            }
+    
+    &:nth-child(3n) {
+        margin-right: 0;
+        }
+    
+    &:nth-last-child(-n + 3) {
+        margin-bottom: 0px;
+        }
 }
 
 .projects__description {
@@ -91,11 +94,6 @@
     color: $second-color;
 }
 
-.projects__list .img__wrapper {
-    position: relative;
-    overflow: hidden;
-}
-
 .projects__overlay {
     position: absolute;
     display: flex;
@@ -115,23 +113,22 @@
 
     transform: translateY(100%);
     transition-property: transform;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @extend %transitions;
 }
 
 .projects__link {
     transition-property: box-shadow;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @extend %transitions;
+    
+    &:hover,
+    &:focus {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+            1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+
+    &:hover .projects__overlay,
+    &:focus .projects__overlay {
+        transform: translateY(0);
+    }
 }
 
-.projects__link:hover,
-.projects__link:focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-        1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.projects__link:hover .projects__overlay,
-.projects__link:focus .projects__overlay {
-    transform: translateY(0);
-}

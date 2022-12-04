@@ -6,7 +6,7 @@ p {
 }
 
 .body {
-    font-family: "roboto", "sans-serif";
+    font-family: $main-font;
     font-size: 16px;
     background-color: $background-color;
     color: $main-color;
@@ -46,4 +46,9 @@ p {
 
 .social-icons {
     fill: currentColor;
+}
+
+%transitions {
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }

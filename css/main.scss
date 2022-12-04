@@ -1,13 +1,13 @@
-// BASE STYLES
-@import "../sass/base/vars";
-@import "../sass/base/base";
+// UTILS
+@import "../sass/utils/vars";
+@import "../sass/utils/base";
+@import "../sass/utils/visuallihidden";
+
 // COMPONENTS STYLES
 @import "../sass/components/logo";
 @import "../sass/components/button";
 @import "../sass/components/modal";
-// UTILS
 
-@import "../sass/utils/visuallihidden";
 // LAYOUT STYLES
 @import "../sass/layout/header";
 @import "../sass/layout/hero";

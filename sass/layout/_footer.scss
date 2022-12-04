@@ -5,7 +5,7 @@
     background-color: $background-section-color;
 }
 
-.footer .container {
+.footer__container {
     display: flex;
     align-items: baseline;
 }
@@ -43,8 +43,7 @@
     color: $extra-white-color;
 
     transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @extend %transitions;
 }
 
 .footer__mail {
@@ -60,8 +59,7 @@
     color: rgba(255, 255, 255, 0.6);
 
     transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @extend %transitions;
 }
 
 .footer__link:hover,
@@ -100,13 +98,12 @@
     color: $extra-white-color;
 
     transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+    @extend %transitions;
 
-.footer-item__icon:hover,
-.footer-item__icon:focus {
-    background-color: $accent-color;
+    &:hover,
+    &:focus {
+        background-color: $accent-color;
+    }
 }
 
 .footer__form {
@@ -128,25 +125,25 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.footer__input:hover,
-.footer__input:focus {
-    border-color: $accent-color;
-    outline: none;
-}
+    &:hover,
+    &:focus {
+        border-color: $accent-color;
+        outline: none;
+    }
 
-.footer__input::placeholder {
-    font-weight: 400;
-    line-height: calc(20 / 16);
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
-}
+    &::placeholder {
+        font-weight: 400;
+        line-height: calc(20 / 16);
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);
+    }
 
-.footer__input:hover::placeholder,
-.footer__input:focus::placeholder {
-    color: $extra-white-color;
-    border-color: $accent-color;
+    &:hover::placeholder,
+    &:focus::placeholder {
+        color: $extra-white-color;
+        border-color: $accent-color;
+    }
 }
 
 .footer__button {
@@ -168,6 +165,12 @@
     color: $extra-white-color;
 
     transition-property: background-color, color;
+
+        &:hover,
+        &:focus {
+            background-color: $button-second-color;
+            color: $main-color;
+        }
 }
 
 .footer-button__icon {
@@ -178,7 +181,5 @@
     right: 28px;
 }
 
-.footer__button:hover,
-.footer__button:focus {
-    background-color: $button-second-color;
-    color: $main-color;}
+
+

@@ -53,13 +53,12 @@
     fill: $accent-black-color;
   
     transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
+    @extend %transitions;
   
-  .close-icon:hover,
-  .close-icon:focus {
-    fill: $accent-color;
+    &:hover,
+    &:focus {
+      fill: $accent-color;
+    }
   }
   
   .is-hidden {
@@ -87,6 +86,7 @@
     position: relative;
     margin-bottom: 10px;
   }
+
   .modal__input {
     position: relative;
     width: 100%;
@@ -95,18 +95,19 @@
     border-radius: 4px;
     padding-left: 42px;
     font: inherit;
+
+    &:hover,
+    &:focus {
+        border-color: $accent-color;
+        outline: none;
+      }
+
+    &:hover+.modal__icon,
+    &:focus+.modal__icon {
+         fill: $accent-color;
+      }
   }
-  .modal__input:hover,
-  .modal__input:focus {
-    border-color: $accent-color;
-    outline: none;
-  }
-  
-  .modal__input:hover + .modal__icon,
-  .modal__input:focus + .modal__icon {
-    fill: $accent-color;
-  }
-  
+ 
   .modal__label {
     display: inline-block;
     margin-bottom: 4px;
@@ -116,6 +117,7 @@
     letter-spacing: 0.01em;
     color: $second-color;
   }
+
   .modal__icon {
     position: absolute;
   
@@ -135,26 +137,30 @@
     border-radius: 4px;
   
     margin-bottom: 20px;
+
+    &::placeholder {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.01em;
+    
+        color: rgba(117, 117, 117, 0.5);
+      }
+    
+      &:hover,
+      &:focus {
+        border-color: $accent-color;
+        outline: none;
+      }
   }
-  .modal__comment::placeholder {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 14px;
-    letter-spacing: 0.01em;
+
   
-    color: rgba(117, 117, 117, 0.5);
-  }
-  
-  .modal__comment:hover,
-  .modal__comment:focus {
-    border-color: $accent-color;
-    outline: none;
-  }
   .agree {
     display: flex;
     margin-bottom: 30px;
     align-items: center;
   }
+
   .agree__link {
     color: $accent-color;
   }
@@ -184,14 +190,14 @@
   
     border-style: none;
     transition-property: background-color, color;
+
+    &:hover,
+    &:focus {
+      background-color: $button-second-color;
+      color: $main-color;
+      }
   }
-  
-  .modal__button:hover,
-  .modal__button:focus {
-    background-color: $button-second-color;
-    color: $main-color;
-  }
-  
+   
   .icon-wrapper {
     width: 16px;
     height: 15px;
@@ -205,6 +211,7 @@
     border-radius: 3px;
     margin-right: 7px;
   }
+  
   .agree__icon {
     fill: transparent;
   }
